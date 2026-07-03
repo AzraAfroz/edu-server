@@ -21,6 +21,7 @@ import attendancePeriodRouter from './router/attendancePeriod.routes.js';
 import feeHeadRouter from "./router/FeeStructure/feeHead.router.js";
 import feeStructureRouter from "./router/FeeStructure/feeStructure.router.js";
 import feeStructureItemRouter from "./router/FeeStructure/feeStructureItem.router.js";
+import classroomRouter from "./router/classroom.routes.js";
 import { globalErrorHandler } from "./middlewares/error/error.middleware.js";
 import cookieParser from "cookie-parser";
 
@@ -88,6 +89,7 @@ app.use("/api/v1/biometric-punches", biometricPunchRouter);
 app.use("/api/v1/fee-heads", feeHeadRouter);
 app.use("/api/v1/fee-structures", feeStructureRouter);
 app.use("/api/v1/fee-structure-items", feeStructureItemRouter);
+app.use("/api/v1/classrooms", classroomRouter);
 
 app.use("/api/v1/exam-groups", examGroupRoutes);
 app.use("/api/v1/exam-schedules", examScheduleRoutes);

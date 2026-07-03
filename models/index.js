@@ -53,6 +53,7 @@ import { FeeStructureItem } from "./FeeStructure/FeeStructureItem.js";
 // --- Attendance & Attendance Period ---
 import { Attendance } from "./Attendance.js";
 import { AttendancePeriod } from "./AttendancePeriod.js";
+import { Classroom } from "./Classroom.js";
 
 // ==========================================
 // 1. TENANT & BILLING ASSOCIATIONS
@@ -341,6 +342,7 @@ export {
   TeacherSubjectAssignment,
   Room,
   Timetable,
+  Classroom,
   TimetableSlot,
   Attendance,
   AttendancePeriod,
